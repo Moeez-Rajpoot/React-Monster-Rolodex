@@ -4,17 +4,17 @@ import './App.css';
 function App() {
 
   //other functions and hooks are declared and defined here
-
+  console.log("render");
  const [serachvalue, setserachvalue] = useState('');
+ console.log({serachvalue});
+ 
 
 
-
- const searchbox = (event) => {
+ function searchbox(event) {
 
   let value = event.target.value.toLocaleLowerCase();
   setserachvalue(value);
-  console.log({serachvalue});
- 
+  
   
  };
 
